@@ -1,1 +1,96 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="assets/img/logo.ico">
+
+  <title>Cat Power Fan Page!</title>
+
+  <! -- Bootstrap & Font-Awesome Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <! -- Custom Styles -- >
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  <div id="container">
+
+    <div class="col-md-3">
+      <div class="section">
+        <p>
+          Cat Power is a singer-songwriter and multi-instrumentalist whose music fuses folk, country and blues, as heard on albums
+          like Moon Pix and The Greatest.
+        </P>
+        <p>
+          Born on January 21, 1972 in Atlanta, Georgia, Cat Power was part of the indie scene of her home city and New York before
+          releasing her debut Dear Sir. With work that has an acoustic feel, she’s released several lauded albums over the
+          years, including You Are Free and The Greatest, while also struggling publicly with alcoholism and depression.
+          She released the empowering, electronic Sun in 2012.
+        </p>
+        <a href="https://www.rollingstone.com/music/artists/cat-power/biography" target="_blnak" ><p>For more: Rolling Stone Bio</p></a>
+        <br>
+        <br>
+        <hr>
+        <h3>
+          "Everybody tends to think I'm crazy, which is the biggest problem in my life"
+        </h3>
+        <hr>
+        <ul style="list-style-type:none" id="playlist">
+          <li class="active"><a href="assets/img/The Greatest.mp3">The Greatest</a></li>
+          <li><a href="assets/img/Reason.mp3">Reason</a></li>
+          <li><a href="assets/img/King Rides By.mp3">King Rides By</a></li>
+          <li><a href="assets/img/Cross Bones Style.mp3">Cross Bones Style</a></li>
+          <li><a href="assets/img/Good Woman.mp3">Good Woman</a></li>
+        </ul>
+      </div>
+      <! -- /section -->
+    </div>
+    <! -- /col -->
+
+    <div class="col3" style="padding:25px">
+      <div class="row">
+        <h1>Cat Power</h1>
+        <br>
+        <audio autoplay id="audio" preload="auto" tabindex="0" controls="" type="audio/mp3">
+          <source type="audio/mp3" src="assets/img/The Greatest.mp3"> Sorry, your browser does not support HTML5 audio.
+        </audio>
+      </div>
+    </div><! -- /col -->
+
+  </div><! -- /container -->
+
+  <! -- Traffic -->
+  <audio autoplay src="assets/img/traffic.mp3"></audio>
+
+
+  <! -- jQuery & Bootstrap JavaScript plugins -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+  <! -- Custom JavaScript -->
+  <script src="assets/js/custom.js"></script>
+
+
+  <! --  Onbaord Scripts -->
+  <script type="text/javascript">
+    $(function () {
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+      });
+    });
+  </script>
+
+</body>
+
+</html>

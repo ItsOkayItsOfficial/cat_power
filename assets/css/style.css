@@ -1,0 +1,144 @@
+/*
+* Author: Alex P
+* URL: www.itsokayitsofficial.io
+*
+* Project Name: Assignment #8: Mah Bands!
+* Version: 1.0
+* Date: 07.05.17
+* URL: n/a
+*/
+
+
+/*=============================================
+Base Styles & Fonts Import
+=============================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+html,
+button,
+input,
+select,
+textarea {
+color: #000;
+}
+
+::-moz-selection {
+background: #f2c2c9;
+color: #a4003a;
+text-shadow: none;
+}
+
+::selection {
+background: #16a085;
+color: #a4003a;
+text-shadow: none;
+}
+
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+
+.centered {
+text-align: center
+}
+
+
+/*=============================================
+General Styles
+=============================================*/
+
+html {
+	background:#505D6E url(../img/rain.gif) no-repeat center center fixed; 
+	min-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+body {
+	background:transparent;
+	min-height:100%; 	
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.5em;
+	font-size:14px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+	color:rgba(255,255,255,.8); 
+	font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    color:#ffffff;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    letter-spacing: 8px;
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+/*=============================================
+Section
+=============================================*/
+
+#container {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:15%;
+    right:0;
+    overflow:hidden;
+}
+
+.section {
+    min-height: 1000px;
+	width: 100%; 
+	overflow:auto;
+    padding: 15px;
+    background-color: rgba(14, 14, 14, 0.4);
+    border: 0px solid #eee;
+} 
+
+@media (min-width: 768px) {
+	.section { padding-top:160px;}
+}
+
+
+/*=============================================
+Playlist
+=============================================*/
+
+#playlist,audio {
+    width:375px;
+    padding:0px;
+}
+
+.active a {
+    color:#fff;
+
+}
+
+li a {
+    color:rgba(255,255,255,.4);
+    padding:5px;
+    display:block;
+}
+
+li a:hover {
+    text-decoration:none;
+}
